@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.expansion.lg.kimaru.ugexpansion.RegistrationActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:text="Name"
+        android:id="@+id/editName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:paddingTop="0dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:text="Phone"
+        android:id="@+id/editPhone"
+        android:layout_below="@+id/editName"
+        android:paddingTop="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_alignStart="@+id/editName"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:paddingTop="2dp"
+        android:text="Role"
+        android:id="@+id/editCommunityRole"
+        android:layout_below="@+id/editLanguage"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_alignStart="@+id/editLanguage"
+        />
+
+    <!--
+    When Moved
+    Read English
+    BRAC
+    BRACK CHP
+    VHT
+    Education LEvel -->
+
+
+    <Button
+        android:text="List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="2dp"
+        android:id="@+id/buttonList"
+        android:onClick="clickOnButton (RegistrationActivity)"
+        android:layout_alignBaseline="@+id/buttonSave"
+        android:layout_alignBottom="@+id/buttonSave"
+        android:layout_alignEnd="@+id/editMail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:text="Email"
+        android:paddingTop="2dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/editMail"
+        android:layout_below="@+id/editOccupation"
+        android:layout_alignStart="@+id/editOccupation" />
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_alignStart="@+id/editName"
+        android:layout_below="@+id/editPhone">
+        <RadioButton
+            android:id="@+id/radioM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:checked="false"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:text="@string/radio_male"
+            />
+        <RadioButton
+            android:id="@+id/radioF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:checked="true"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:text="@string/radio_female"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:paddingTop="2dp"
+        android:text="Language"
+        android:id="@+id/editLanguage"
+        android:layout_below="@+id/editFeature"
+        android:layout_alignStart="@+id/editFeature" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:paddingTop="2dp"
+        android:text="Feature"
+        android:id="@+id/editFeature"
+        android:layout_below="@+id/radioGrp"
+        android:layout_alignStart="@+id/radioGrp" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSave"
+        android:paddingTop="2dp"
+        android:layout_below="@+id/editMail"
+        android:layout_alignStart="@+id/editMail"
+        android:layout_marginTop="138dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:paddingTop="2dp"
+        android:text="Occupation"
+        android:id="@+id/editOccupation"
+        android:layout_below="@+id/editCommunityRole"
+        android:layout_alignStart="@+id/editCommunityRole" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:paddingTop="2dp"
+        android:text="Lini"
+        android:id="@+id/etxt_fromdate"
+        android:layout_below="@+id/editOccupation"
+        android:layout_alignStart="@+id/editOccupation" />
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.DatePicker" />
+
+
+</RelativeLayout>

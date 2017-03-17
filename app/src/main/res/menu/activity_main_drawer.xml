@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_recruitments"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Recruitments" />
+        <item
+            android:id="@+id/nav_new_recruitment"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="New Recruitment" />
+        <item
+            android:id="@+id/nav_registrations"
+            android:icon="@drawable/ic_new_applicant"
+            android:title="Registrations" />
+        <item
+            android:id="@+id/nav_new_registration"
+            android:icon="@drawable/ic_new_applicant"
+            android:title="New Registration" />
+        <item
+            android:id="@+id/nav_exams"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Exam Results" />
+        <item
+            android:id="@+id/nav_new_exam"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="New Exam Results" />
+        <item
+            android:id="@+id/nav_interview"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Interview" />
+        <item
+            android:id="@+id/nav_new_interview"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="New Interview" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Sign in" />
+
+        <item
+            android:id="@+id/nav_sign"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Sign out" />
+    </group>
+
+    <item android:title="Sharing">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Make Server" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Sync" />
+        </menu>
+    </item>
+
+</menu>
